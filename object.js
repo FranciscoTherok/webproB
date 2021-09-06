@@ -16,6 +16,13 @@ const student = {
   hobbies: ['berenang', 'traveling', 'membaca']
 };
 
-console.log(student?.address?.street);
+// console.log(student?.address?.street);
 
 // optional chaining: ?.
+
+// destructuring
+console.log(student.firstName);
+
+const {firstName, gender, address: {province}} = student;
+console.log(student.address.province);
+console.log(province);
